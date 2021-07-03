@@ -1,0 +1,132 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: rgb(142, 150, 224);
+}
+
+#todo-list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-list-wrapper #todo-list {
+    position: relative;
+}
+
+#todo-list-wrapper #todo-list {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(202, 197, 197);
+    padding: 20px 50px;
+    width: 600px;
+}
+
+#todo-list-wrapper #todo-list #todos-count {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+}
+
+#todo-list-wrapper #todo-list h1 {
+    text-align: center;
+}
+
+#todo-list-wrapper #todo-list form {
+    display: flex;
+}
+
+#todo-list-wrapper #todo-list form input {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#todo-list-wrapper #todo-list form input[type=text] {
+    border: 2px solid blue;
+    padding: 5px;
+    background: rgb(235, 237, 247);
+    width: 90%;
+    outline: 0;
+}
+
+#todo-list-wrapper #todo-list form input[type=submit] {
+    background: lightblue;
+    border: 0;
+    cursor: pointer;
+    padding: 7px;
+}
+
+#todo-list-wrapper #todo-list #message {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 15px;
+}
+
+#todo-list-wrapper #todo-list #todos {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#todo-list-wrapper #todo-list #todos .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+#todo-list-wrapper #todo-list #todos .todo h3 {
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#todo-list-wrapper #todo-list #todos .todo h3.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+#todo-list-wrapper #todo-list #todos .todo h3.hide-todo {
+    display: none;
+}
+
+#todo-list-wrapper #todo-list #todos .todo input {
+    display: none;
+    font-weight: bold;
+    font-size: 18.72px;
+    border: 2px solid blue;
+    margin: 18.72px 0;
+    border-radius: 5px;
+    outline: 0;
+}
+
+#todo-list-wrapper #todo-list #todos .todo input.show-input {
+    display: block;
+}
+
+#todo-list-wrapper #todo-list #todos .todo div i {
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#todo-list-wrapper #todo-list #todos .todo div i:hover {
+    background: lightgrey;
+}
+
+#todo-list-wrapper #todo-list #todos .todo div i.fa-edit {
+    color: rgb(141, 211, 36);
+}
+
+#todo-list-wrapper #todo-list #todos .todo div i.fa-trash {
+    color: red;
+}
+
+#todo-list-wrapper #todo-list #clear {
+    color: red;
+    text-align: center;
+    cursor: pointer;
+}
